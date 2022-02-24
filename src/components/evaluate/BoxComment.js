@@ -9,7 +9,7 @@ function BoxComment() {
     const [loadedComments, setLoadedComments] = useState([]);
 
     useEffect(() => {
-        fetch('https://nhatkynauan-af1b7-default-rtdb.asia-southeast1.firebasedatabase.app/comments.json'
+        fetch('https://react-food-f13c8-default-rtdb.asia-southeast1.firebasedatabase.app/comments.json'
         ).then(response => {
             return response.json();
         }).then(data => {
@@ -38,7 +38,7 @@ function BoxComment() {
 
     function addCommentHandler(commentData) {
         fetch(
-            'https://nhatkynauan-af1b7-default-rtdb.asia-southeast1.firebasedatabase.app/comments.json',
+            'https://react-food-f13c8-default-rtdb.asia-southeast1.firebasedatabase.app/comments.json',
             {
                 method: "POST",
                 body: JSON.stringify(commentData),

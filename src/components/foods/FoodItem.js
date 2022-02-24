@@ -11,7 +11,7 @@ function FoodItem(props) {
     const history = useHistory();
     function handlerDelete() {
         fetch(
-            "https://nhatkynauan-af1b7-default-rtdb.asia-southeast1.firebasedatabase.app/foods/" + props.id +".json",
+            "https://react-food-f13c8-default-rtdb.asia-southeast1.firebasedatabase.app/foods/" + props.id +".json",
             {
                 method: 'DELETE'
             }

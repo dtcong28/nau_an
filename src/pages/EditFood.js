@@ -11,7 +11,7 @@ function EditFoodPage() {
     //console.log(id);
 
     useEffect(() => {
-        fetch('https://nhatkynauan-af1b7-default-rtdb.asia-southeast1.firebasedatabase.app/foods/' + id + ".json")
+        fetch('https://react-food-f13c8-default-rtdb.asia-southeast1.firebasedatabase.app/foods/' + id + ".json")
             .then(response => response.json())
             .then(data => {
                 setLoadedFoods(data);
@@ -20,7 +20,7 @@ function EditFoodPage() {
     const history = useHistory();
     function updateFoodHandler(foodData) {
         fetch(
-            "https://nhatkynauan-af1b7-default-rtdb.asia-southeast1.firebasedatabase.app/foods/" + id + ".json",
+            "https://react-food-f13c8-default-rtdb.asia-southeast1.firebasedatabase.app/foods/" + id + ".json",
             {
                 method: "PUT",
                 body: JSON.stringify(foodData),

@@ -6,7 +6,7 @@ function ListFoodPage() {
     const [loadedFoods, setLoadedFoods] = useState([]);
 
     useEffect(() => {
-        fetch('https://nhatkynauan-af1b7-default-rtdb.asia-southeast1.firebasedatabase.app/foods.json'
+        fetch('https://react-food-f13c8-default-rtdb.asia-southeast1.firebasedatabase.app/foods.json'
         ).then(response => {
             return response.json();
         }).then(data => {

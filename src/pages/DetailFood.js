@@ -12,7 +12,7 @@ function DetailFoodPage() {
 
 
     useEffect(() => {
-        fetch('https://nhatkynauan-af1b7-default-rtdb.asia-southeast1.firebasedatabase.app/foods/' + id + ".json")
+        fetch('https://react-food-f13c8-default-rtdb.asia-southeast1.firebasedatabase.app/foods/' + id + ".json")
             .then(response => response.json())
             .then(data => {
 

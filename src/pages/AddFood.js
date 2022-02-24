@@ -6,7 +6,7 @@ function AddFoodPage() {
 
     function addFoodHandler(foodData) {
         fetch(
-            "https://nhatkynauan-af1b7-default-rtdb.asia-southeast1.firebasedatabase.app/foods.json",
+            "https://react-food-f13c8-default-rtdb.asia-southeast1.firebasedatabase.app/foods.json",
             {
                 method: "POST",
                 body: JSON.stringify(foodData),
